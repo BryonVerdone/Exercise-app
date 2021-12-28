@@ -11,6 +11,8 @@ body {
   text-align: center;
   padding: 5rem;
   display: flex;
+  max-width: 500px;
+  margin: auto auto;
 }
 .info {
   display: flex;
@@ -28,4 +30,7 @@ body {
 }
 .info #img {
   margin-bottom: 10px;
+}
+.exercise-text {
+  text-align: center;
 }
