@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  text-align: center;
+  padding: 5rem;
+  display: flex;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
+#img {
+  object-fit: cover;
+}
+.info #dropdown {
+  margin-bottom: 10px;
+}
+
+.info #btn {
+  margin-bottom: 10px;
+}
+.info #img {
+  margin-bottom: 10px;
+}

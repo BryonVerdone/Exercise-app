@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Exercies App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <!-- Title  -->
+        <h1>Exercise App</h1>
+        <!-- description -->
+        <h3>Select what muscle group you want to train</h3>
+        <!-- dropdown -->
+        <div class="info">
+          <select name="muscle" id="dropdown">
+            <option value="default">Choose Muscle Group</option>
+            <option value="chest">Chest</option>
+            <option value="legs">Legs</option>
+            <option value="back">Back</option>
+            <option value="arms">Arms</option>
+            <option value="abs">Abs</option>
+          </select>
+          <!-- button -->
+          <button id="btn" type="submit">Show Exercise</button>
+          <!-- display picture -->
+          <div class="img-container">
+            <img
+              id="img"
+              width="300px"
+              height="200px"
+              src="./weights.jpg"
+              alt=""
+            />
+          </div>
+          <!-- display  -->
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
