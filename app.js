@@ -23,6 +23,7 @@ const chest = {
   sets: '3 Sets',
   reps: '10-12 Reps',
   desc: 'The person performing the exercise lies on their back on a bench with a barbell grasped in both hands. They lower the barbell to chest level, then press the barbell upwards, extending the arms until the elbows are locked out. This is one repetition ',
+  img: 'bench press.jpg',
 };
 const legs = {
   name: 'Squat',
@@ -47,56 +48,63 @@ const abs = {
   sets: '3 Sets',
   reps: '15-20 Reps',
   desc: 'It begins with lying with the back on the floor, typically with the arms across the chest or hands behind the head and the knees and toes bent in an attempt to reduce stress on the back muscles and spine, and then elevating both the upper and lower vertebrae from the floor until everything superior to the buttocks is not touching the ground. ',
+  img: 'bench press.jpg',
 };
 //Event listeners
 
-btn.addEventListener('click', function () {
-  if (dropdown.value === 'chest') {
-    console.log(dropdown.value);
-    img.src = 'bench press.jpg';
-    exerciseName.innerText = `${chest.name}`;
-    exerciseSets.innerText = `${chest.sets}`;
-    exerciseReps.innerText = `${chest.reps}`;
-    exerciseDescription.innerText = `${chest.desc}`;
-  }
-});
-btn.addEventListener('click', function () {
-  if (dropdown.value === 'legs') {
-    console.log(dropdown.value);
-    img.src = 'squat.jpg';
-    exerciseName.innerText = `${legs.name}`;
-    exerciseSets.innerText = `${legs.sets}`;
-    exerciseReps.innerText = `${legs.reps}`;
-    exerciseDescription.innerText = `${legs.desc}`;
-  }
-});
-btn.addEventListener('click', function () {
-  if (dropdown.value === 'back') {
-    console.log(dropdown.value);
-    img.src = 'pullup.jpg';
-    exerciseName.innerText = `${back.name}`;
-    exerciseSets.innerText = `${back.sets}`;
-    exerciseReps.innerText = `${back.reps}`;
-    exerciseDescription.innerText = `${back.desc}`;
-  }
-});
-btn.addEventListener('click', function () {
-  if (dropdown.value === 'arms') {
-    console.log(dropdown.value);
-    img.src = 'curl.jpg';
-    exerciseName.innerText = `${arms.name}`;
-    exerciseSets.innerText = `${arms.sets}`;
-    exerciseReps.innerText = `${arms.reps}`;
-    exerciseDescription.innerText = `${arms.desc}`;
-  }
-});
-btn.addEventListener('click', function () {
-  if (dropdown.value === 'abs') {
-    console.log(dropdown.value);
-    img.src = 'situp.jpg';
-    exerciseName.innerText = `${abs.name}`;
-    exerciseSets.innerText = `${abs.sets}`;
-    exerciseReps.innerText = `${abs.reps}`;
-    exerciseDescription.innerText = `${abs.desc}`;
-  }
-});
+const runInput = function (muscleGroup) {
+  btn.addEventListener('click', function () {
+    if (dropdown.value === 'chest') {
+      console.log(dropdown.value);
+      img.src = muscleGroup.img;
+      exerciseName.innerText = muscleGroup.name;
+      exerciseSets.innerText = muscleGroup.sets;
+      exerciseReps.innerText = muscleGroup.reps;
+
+      exerciseDescription.innerText = `${muscleGroup.desc}`;
+    }
+  });
+};
+
+runInput(chest);
+
+// btn.addEventListener('click', function () {
+//   if (dropdown.value === 'legs') {
+//     console.log(dropdown.value);
+//     img.src = 'squat.jpg';
+//     exerciseName.innerText = `${legs.name}`;
+//     exerciseSets.innerText = `${legs.sets}`;
+//     exerciseReps.innerText = `${legs.reps}`;
+//     exerciseDescription.innerText = `${legs.desc}`;
+//   }
+// });
+// btn.addEventListener('click', function () {
+//   if (dropdown.value === 'back') {
+//     console.log(dropdown.value);
+//     img.src = 'pullup.jpg';
+//     exerciseName.innerText = `${back.name}`;
+//     exerciseSets.innerText = `${back.sets}`;
+//     exerciseReps.innerText = `${back.reps}`;
+//     exerciseDescription.innerText = `${back.desc}`;
+//   }
+// });
+// btn.addEventListener('click', function () {
+//   if (dropdown.value === 'arms') {
+//     console.log(dropdown.value);
+//     img.src = 'curl.jpg';
+//     exerciseName.innerText = `${arms.name}`;
+//     exerciseSets.innerText = `${arms.sets}`;
+//     exerciseReps.innerText = `${arms.reps}`;
+//     exerciseDescription.innerText = `${arms.desc}`;
+//   }
+// });
+// btn.addEventListener('click', function () {
+//   if (dropdown.value === 'abs') {
+//     console.log(dropdown.value);
+//     img.src = 'situp.jpg';
+//     exerciseName.innerText = `${abs.name}`;
+//     exerciseSets.innerText = `${abs.sets}`;
+//     exerciseReps.innerText = `${abs.reps}`;
+//     exerciseDescription.innerText = `${abs.desc}`;
+//   }
+// });
