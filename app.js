@@ -1,24 +1,30 @@
-const exercises = {
-  benchPress: {
-    name: 'bench press',
-    reps: '12',
-    sets: '3',
-    image: './images/bench-press.jpg',
-  },
-};
 const exercisesDOM = document.querySelector('.exercises-center');
-const { name, reps, sets, image } = exercises.benchPress;
-console.log(name, reps);
 
-const img = (document.querySelector('.img').src = image);
+const url = 'exercises.json';
+const fetchExercises = async () => {
+  exercisesDOM.innerHTML = `<div class="loading">Loading...</div>`;
+  try {
+    const res = await fetch(url);
+    const data = await res.json();
+    console.log(data);
+    return data;
+  } catch (error) {
+    exercisesDOM.innerHTML = `<p class="error"> There was an error</p>`;
+  }
+};
+const displayExercises = (list) => {
+  const exerciseList = list.map((exercise) => {
+    const { id } = exercise;
+    const { name, reps, set, imgae } = exercise.fields;
+    console.log(name);
+  });
+};
 
-function product(name, reps, sets, img) {
-  return `<article>
-  <img src="${img}" alt="" />
-  <h3>${name}</h3>
-  <span>${sets}</span>
-  <span>${reps}</span>
-</article>`;
-}
+// fetchExercises(url);
 
-exercisesDOM.innerHTML = product(name, reps, sets, image);
+const start = async () => {
+  const data = await fetchExercises();
+  displayExercises(data);
+};
+
+start();

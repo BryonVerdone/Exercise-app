@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "fields": {
+      "name": "bench press",
+      "reps": "12",
+      "sets": "3",
+      "image": "./images/bench-press.jpg"
+    }
+  },
+  {
+    "id": 2,
+    "fields": {
+      "name": "squat",
+      "reps": "12",
+      "sets": "3",
+      "image": "./images/bench-press.jpg"
+    }
+  }
+]
