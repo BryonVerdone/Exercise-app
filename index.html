@@ -8,44 +8,13 @@
     <title>Exercies App</title>
   </head>
   <body>
-    <div class="container">
-      <div class="card">
-        <!-- Title  -->
-        <h1>Exercise App</h1>
-        <!-- description -->
-        <h3>Select what muscle group you want to train</h3>
-        <!-- dropdown -->
-        <div class="info">
-          <select name="muscle" id="dropdown">
-            <option value="default">Choose Muscle Group</option>
-            <option value="chest">Chest</option>
-            <option value="legs">Legs</option>
-            <option value="back">Back</option>
-            <option value="arms">Arms</option>
-            <option value="abs">Abs</option>
-          </select>
-          <!-- button -->
-          <button id="btn" type="submit">Show Exercise</button>
-          <!-- display picture -->
-          <div class="img-container">
-            <img
-              id="img"
-              width="300px"
-              height="200px"
-              src="./weights.jpg"
-              alt=""
-            />
-          </div>
-          <!-- display  -->
-          <div class="exercise-text">
-            <h1 id="exercise-name"></h1>
-            <h1 id="sets"></h1>
-            <h1 id="reps"></h1>
-            <p id="desc"></p>
-          </div>
-        </div>
+    <section class="exercises">
+      <div class="title">
+        <h2>Exercises</h2>
       </div>
-    </div>
+      <div class="exercises-center"></div>
+    </section>
+
     <script src="./app.js"></script>
   </body>
 </html>
