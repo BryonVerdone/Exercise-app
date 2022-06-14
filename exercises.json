@@ -14,7 +14,97 @@
       "name": "squat",
       "reps": "12",
       "sets": "3",
-      "image": "./images/bench-press.jpg"
+      "image": "./images/squat.jpg"
+    }
+  },
+  {
+    "id": 3,
+    "fields": {
+      "name": "dead lift",
+      "reps": "12",
+      "sets": "3",
+      "image": "./images/deadlift.jpg"
+    }
+  },
+  {
+    "id": 4,
+    "fields": {
+      "name": "shoulder press",
+      "reps": "12",
+      "sets": "3",
+      "image": "./images/shoulder-press.jpg"
+    }
+  },
+  {
+    "id": 5,
+    "fields": {
+      "name": "pull-up",
+      "reps": "12",
+      "sets": "3",
+      "image": "./images/pull-up.jpg"
+    }
+  },
+  {
+    "id": 6,
+    "fields": {
+      "name": "barbell row",
+      "reps": "12",
+      "sets": "3",
+      "image": "./images/barbell-row.jpg"
+    }
+  },
+  {
+    "id": 7,
+    "fields": {
+      "name": "dips",
+      "reps": "12",
+      "sets": "3",
+      "image": "./images/dips.jpg"
+    }
+  },
+  {
+    "id": 8,
+    "fields": {
+      "name": "lunges",
+      "reps": "12",
+      "sets": "3",
+      "image": "./images/lunges.jpg"
+    }
+  },
+  {
+    "id": 9,
+    "fields": {
+      "name": "tricep extension",
+      "reps": "12",
+      "sets": "3",
+      "image": "./images/triceps.jpg"
+    }
+  },
+  {
+    "id": 10,
+    "fields": {
+      "name": "bicep curl",
+      "reps": "12",
+      "sets": "3",
+      "image": "./images/bicep.jpg"
+    }
+  },
+  {
+    "id": 1,
+    "fields": {
+      "name": "plank",
+      "reps": "12",
+      "sets": "3",
+      "image": "./images/plank.jpg"
+    }
+  },
+  {
+    "id": 12,
+    "fields": {
+      "name": "front squat",
+      "reps": "12",
+      "sets": "3",
+      "image": "./images/front-squat.jpg"
     }
   }
 ]

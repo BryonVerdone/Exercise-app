@@ -13,11 +13,23 @@ const fetchExercises = async () => {
   }
 };
 const displayExercises = (list) => {
-  const exerciseList = list.map((exercise) => {
-    const { id } = exercise;
-    const { name, reps, set, imgae } = exercise.fields;
-    console.log(name);
-  });
+  const exerciseList = list
+    .map((exercise) => {
+      const { id } = exercise;
+      const { name, reps, sets, image } = exercise.fields;
+      console.log(name);
+      return `<a href="exercise.html" class="single-exercise">
+    <img class="img" src="${image}" alt="">
+    <h5 class="exercise-name">${name}</h5>
+    <p>${sets}</p>
+    <p>${reps}</p>
+  </a>`;
+    })
+    .join('');
+  exercisesDOM.innerHTML = `<div class="exercises-container">
+    ${exerciseList} 
+      
+</div>`;
 };
 
 // fetchExercises(url);
