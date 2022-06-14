@@ -3,3 +3,43 @@
   box-sizing: border-box;
   padding: 0;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
+.exercises-center {
+  margin: 0 auto;
+  /* text-align: center; */
+}
+.loading {
+  width: 6rem;
+  height: 6rem;
+  border: 5px solid var(--grey-400);
+  border-radius: 50%;
+  border-top-color: var(--primary-500);
+  animation: spinner 0.6s linear infinite;
+}
+.exercises-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .exercises-container {
+    grid-template-columns: 1fr;
+  }
+}
+.single-exercise {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: fill;
+  height: 287.219px;
+}
